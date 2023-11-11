@@ -26,3 +26,9 @@ C:\Users\Usuario\Carpeta_con_modelo_y_sala_de_pruebas>python nombre.py
 ```
 
 Si quieres entrenarlo solo descárgalo, entrénalo y ejecútalo para ver resultados.
+
+# INFORMACION DEL MODELO ENTRENADO
+
+El modelo entrenado cuenta con un loss en el test de 0.04033243656158447.
+
+Depende del entrenamiento y la modificación el el batch_size y las épocas se obtendrán resultados diferentes.
