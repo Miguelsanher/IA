@@ -29,15 +29,16 @@ modeloEntrenar = crear_modelo()
 #COMPILAMOS
 optimizer = tf.keras.optimizers.Adam(learning_rate=0.008)
 modeloEntrenar.compile(optimizer= optimizer, loss='mean_squared_error')
-#MOSTRAMOS RESULTADOS
+#ENTRENAMOS
 print("Comenzando a entrenar......")
 historial= modeloEntrenar.fit(listaC,listaF,epochs=1000,verbose=True,batch_size=32)
 print("Modelo entrenado")
 
+#CREAMOS UN GRÁFICO PARA VER EL LOSS
 plt.xlabel("EPOCA")
 plt.ylabel("Magnitud perdida")
 plt.plot(historial.history["loss"])
-
+#PREDICCIÓN DE PRUEBA
 resultado = modeloEntrenar.predict([100.0])
 print("Son"+str(resultado)+"farenhait ")
 
