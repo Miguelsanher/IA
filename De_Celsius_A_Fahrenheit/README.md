@@ -35,4 +35,4 @@ Depende del entrenamiento y la modificación el el batch_size y las épocas se o
 
 Gráfica del loss:
 
-![](https://github.com/Miguelsanher/IA/blob/main/De_Celsius_A_Fahrenheit/Gr%C3%A1fica_del_loss.png)
+![](https://github.com/Miguelsanher/IA/blob/main/De_Celsius_A_Fahrenheit/Grafica_del_loss.png)
