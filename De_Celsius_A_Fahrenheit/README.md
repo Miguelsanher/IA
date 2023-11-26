@@ -29,7 +29,7 @@ Si quieres entrenarlo solo descárgalo, entrénalo y ejecútalo para ver resulta
 
 # INFORMACION DEL MODELO ENTRENADO
 
-El modelo entrenado cuenta con un loss en el test de 0.04033243656158447.
+El modelo entrenado cuenta con un loss en el test de 0.0039693983271718025.
 
 Depende del entrenamiento y la modificación el el batch_size y las épocas se obtendrán resultados diferentes.
 
