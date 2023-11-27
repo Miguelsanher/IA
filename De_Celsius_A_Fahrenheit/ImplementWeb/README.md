@@ -15,3 +15,5 @@ El archivo .bin y model.json el el modelo DeCaFEntrenado_1.2.h5. Este cambio de 
   Si has descargado la carpeta De_Celsius_A_Fahrenheit esa será tu ruta si solo descargaste ImplementWeb te ahorras un cd.
 - Una vez abierto el server dirígete al puerto en nuestro caso el 8000 (abre google y ve a http://localhost:8000/)
 - Una vez quieras cerrar el server solo cierra el cmd.
+  Deberías ver algo tal que esto:
+  ![](https://github.com/Miguelsanher/IA/blob/main/De_Celsius_A_Fahrenheit/ImplementWeb/capGitHub.PNG)
