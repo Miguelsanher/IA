@@ -1,0 +1,37 @@
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+h2{
+    margin:16px;
+}
+h3{
+    margin:16px
+}
+h4{
+    margin:16px
+}
+ul{
+    margin:16px
+}
+p{
+    margin:16px;
+}
+#formulario{
+    margin:16px;
+}
+#img2{
+    position: absolute;
+    top: 170px;
+    right: 400px;
+    width: 15%;
+}
+#resultado{
+    margin: 16px;
+}

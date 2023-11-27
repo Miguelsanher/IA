@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Celsius a farenheit con IA</title>
+    <!-- Puedes agregar enlaces a tus estilos CSS aquí -->
+    <!-- <link rel="stylesheet" href="estilos.css"> -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Web para pasar de Celsius a Fahrenheit con IA
+        </h1>
+    </header>
+
+    <h4> Creado por Miguel Sánchez Hernández</h4>
+    <p> Visita mi 
+        <a href="https://github.com/Miguelsanher/IA/tree/main/De_Celsius_A_Fahrenheit">Github </a>
+
+    </p>
+    <!-- Contenido de la página va aquí -->
+    <h2>Formulario de Número</h2>
+
+    <form id="formulario">
+        <label for="numero">Ingresa un número:</label>
+        <input type="number" id="numero" name="numero" required>
+        <button type="button" onclick="procesarNumero()">Procesar Número</button>
+    </form>
+    <!-- Puedes incluir tus scripts JavaScript aquí -->
+    <!-- <script src="script.js"></script> -->
+    <div id="resultado">
+
+    </div>
+    <!--ESPAÑOL-->
+    <h3>
+        OBSERVACIONES
+    </h3>
+    <!--Lista de obserbaciones no ordenadas-->
+    <ul>
+        <li>Solo está entrenada con 19 valores. Diría según lo que he probado que todos los valores van bien</li>
+        <li>Hay valores que los clava como el 1,120,34,etc. En los demás excepto algunos se queda muy cerca del valor exacto</li>
+        <li>Se podría mejorar usando más ejemplos en el entrenamiento ,pero este proyecto es sobre todo para aprender <br>
+            la arquitectura, aspectos básicos de TensorFlow y su implementación en web. </li>
+        <li>No es mala en valores altos se puede usar con valores más altos que el 1000 sin problema<br>
+            Como ejemplo probad el 5000 y veréis que casi lo clava o el 5056 etc
+        </li>
+        <li>Solo funciona con números POSITIVOS no se ha entrenado para números negativos</li>
+    </ul>
+    <!--INGLES-->
+    <h3>
+        COMMENTS
+    </h3>
+    <!--Lista de obserbaciones no ordenadas-->
+    <ul>
+        <li> It is only trained with 19 values. I would say according to what I have tested that all values are rigth</li>
+        <li>There are values that it hits them like 1,120,34,etc. In the others, except for some, it stays very close to the exact value.</li>
+        <li>It could be improved by using more examples in the training, but this project is mainly to learn<br>
+            the architecture, basics of TensorFlow and its web implementation. </li>
+        <li>It is not bad in high values can be used with higher values than 1000 without problem<br>
+            As an example try the 5000 and you will see that it almost nails it or the 5056 etc.
+        </li>
+        <li>It only works with POSITIVE numbers not trained for negative numbers.</li>
+    </ul>
+    <img src="img2.png" alt="Representacion" id="img2"> 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"> </script>
+
+    <script type="text/javascript">
+
+        //Cargar modelo
+        (async () => {
+              console.log("Cargando modelo...");
+            modelo = await tf.loadLayersModel("model.json");
+            console.log("Modelo cargado...");
+        })();
+        //creamos la funcion de proceser el numero
+        function procesarNumero(){
+            var celsius= document.getElementById('numero').value;
+            console.log(celsius);
+            //creamos el tensor
+            var tensor = tf.tensor1d([parseInt(celsius)]);
+            var prediccion = modelo.predict(tensor).dataSync();
+            document.getElementById("resultado").innerHTML=prediccion;
+        }
+
+    </script>
+
+</body>
+</html>
