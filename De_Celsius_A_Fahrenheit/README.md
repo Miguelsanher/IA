@@ -12,7 +12,7 @@ Ha sido desarrollada en Google Colab. El archivo .h5 es el modelo entrenado list
 
 # EXPORTAR MODELO
 
-Descarga el modelo'DeCaFEntrenado.h5'
+Descarga el modelo'DeCaFEntrenado_1.2.h5'
 
 Primero crea un código con la sala de pruebas incluida en el modelo o crea la tuya propia.
 
