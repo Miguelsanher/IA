@@ -17,3 +17,7 @@ El archivo .bin y model.json el el modelo DeCaFEntrenado_1.2.h5. Este cambio de 
 - Una vez quieras cerrar el server solo cierra el cmd.
   Deberías ver algo tal que esto:
   ![](https://github.com/Miguelsanher/IA/blob/main/De_Celsius_A_Fahrenheit/ImplementWeb/capGitHub.PNG)
+
+  ## ACUALIZACIONES
+  - He añadido fotos tematicas. Hay una para temperaturas frías(a pesar de que el modelo no predice temperaturas negativas), normales y cálidas.Tambien he puesto una foto de fondo inicial del espacio.
+
