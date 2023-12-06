@@ -1,12 +1,18 @@
 header {
     background-color: #333;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 20px;
 }
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    color: #96AE52;
+    transition: background-image 1s ease;
+    background-image: url('space.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 h2{
     margin:16px;
