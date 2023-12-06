@@ -84,6 +84,22 @@
             var tensor = tf.tensor1d([parseInt(celsius)]);
             var prediccion = modelo.predict(tensor).dataSync();
             document.getElementById("resultado").innerHTML=prediccion;
+            cambiar_fondo(celsius);
+        }
+
+        function cambiar_fondo(celsius){
+            if(celsius>=27){
+            document.body.style.backgroundImage='url("Clima_volcanico.png")';
+            document.body.style.color= '#ffffff';
+            }
+            if(celsius<=-10){
+            document.body.style.backgroundImage='url("Clima_nieve.png")';
+            document.body.style.color= '#333'; 
+            }
+            if(celsius>-10 && celsius<27){
+            document.body.style.backgroundImage='url("Clima_normal.png")';
+            document.body.style.color= '#000000'; 
+            }
         }
 
     </script>
